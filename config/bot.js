@@ -10,7 +10,7 @@ module.exports = {
     discord: {
         token: process.env.TOKEN,
         prefix: '*',
-        activity: 'Chill with Mona',
+        activity: 'Chill with Mona!',
     },
 
     filters: ['8D', 'gate', 'haas', 'phaser', 'treble', 'tremolo', 'vibrato', 'reverse', 'karaoke', 'flanger', 'mcompand', 'pulsator', 'subboost', 'bassboost', 'vaporwave', 'nightcore', 'normalizer', 'surrounding'],
