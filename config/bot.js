@@ -8,7 +8,7 @@ module.exports = {
     },
 
     discord: {
-        token: '',
+        token: process.env.TOKEN,
         prefix: '*',
         activity: 'Chill with Mona',
     },
