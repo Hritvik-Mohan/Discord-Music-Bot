@@ -4,6 +4,8 @@ const discord = require('discord.js');
 
 const client = new discord.Client({ disableMentions: 'everyone' });
 
+const keepAlive = require('./server');
+
 const { Player } = require('discord-player');
 
 client.player = new Player(client);
@@ -36,5 +38,7 @@ for (const file of player) {
     const event = require(`./player/${file}`);
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
+
+keepAlive();
 
 client.login(client.config.discord.token);
